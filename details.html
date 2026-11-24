@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Details - Student Information Management System</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="dashboard.html">Student Info System</a>
+      <div class="navbar-nav me-auto">
+        <a class="nav-link" href="dashboard.html">Dashboard</a>
+        <a class="nav-link" href="form.html">Add Student</a>
+      </div>
+      <a href="index.html" id="logoutBtn" class="btn btn-outline-light btn-sm">Logout</a>
+    </div>
+  </nav>
+  <main class="container py-4">
+    <div class="d-flex flex-wrap justify-content-between align-items-center mb-4 gap-2">
+      <div>
+        <h3 class="fw-bold mb-1">Student Profile Details</h3>
+        <p class="text-muted mb-0">Complete academic and contact record</p>
+      </div>
+      <div class="d-flex gap-2">
+        <a href="dashboard.html" class="btn btn-outline-secondary">Back to Dashboard</a>
+        <a href="form.html" id="editStudentBtn" class="btn btn-primary">Edit Student</a>
+      </div>
+    </div>
+    <div class="card content-card shadow-sm p-4" id="studentDetailsCard">
+      <div class="row g-3">
+        <div class="col-md-6">
+          <div class="text-muted small">Student ID</div>
+          <div class="fw-semibold fs-6" id="detailId">STU-001</div>
+        </div>
+        <div class="col-md-6">
+          <div class="text-muted small">Full Name</div>
+          <div class="fw-semibold fs-6" id="detailName">Sok Dara</div>
+        </div>
+        <div class="col-md-6">
+          <div class="text-muted small">Gender</div>
+          <div class="fw-semibold fs-6" id="detailGender">Male</div>
+        </div>
+        <div class="col-md-6">
+          <div class="text-muted small">Major / Department</div>
+          <div class="fw-semibold fs-6" id="detailMajor">Information Technology</div>
+        </div>
+        <div class="col-md-6">
+          <div class="text-muted small">Email Address</div>
+          <div class="fw-semibold fs-6" id="detailEmail">sok.dara@example.edu</div>
+        </div>
+        <div class="col-md-6">
+          <div class="text-muted small">Phone Number</div>
+          <div class="fw-semibold fs-6" id="detailPhone">+855 12 345 678</div>
+        </div>
+        <div class="col-md-6">
+          <div class="text-muted small">Status</div>
+          <div id="detailStatus"><span class="badge bg-success-subtle text-success">Active</span></div>
+        </div>
+        <div class="col-12">
+          <div class="text-muted small">Address</div>
+          <div class="fw-semibold fs-6" id="detailAddress">Phnom Penh, Cambodia</div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
